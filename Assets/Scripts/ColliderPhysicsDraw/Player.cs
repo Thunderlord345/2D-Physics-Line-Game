@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	public float movePower = 5f; // Force added to the ball to move it
-	public bool useTorque = false; // To use or not to use torque for drivinb the rolling object
+	public bool useTorque = false; // To use or not to use torque for driving the rolling object
 	public float maxAngularVelocity = 5f; // Maximum angular velocity at which rolling object can rotate
 	public float jumpPower = 50f; // Force added to the ball when it jumps
     private float groundRayLength = 0.1f; // Length of the ray to check if the ball is grounded

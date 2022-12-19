@@ -86,6 +86,8 @@ public class DrawingManager : MonoBehaviour {
 			DrawVisibleLine();
 		}
 
+        
+
 		if(Input.GetMouseButtonUp(0)) {
 			centerOfMassCount = 0;
 			centerOfMass = Vector2.zero;
@@ -226,11 +228,16 @@ public class DrawingManager : MonoBehaviour {
 	}
 
 	public void ClearPaths() {
-		if(lines == null)
-			lines = GameObject.FindGameObjectsWithTag("Line");
+		
+	    lines = GameObject.FindGameObjectsWithTag("Line");
+		if (lines == null)
+			return;
 
 		foreach(GameObject line in lines) {
 			Destroy(line);
+			Debug.Log("Lines destroyed");
 		}
+
+		
 	}
 }

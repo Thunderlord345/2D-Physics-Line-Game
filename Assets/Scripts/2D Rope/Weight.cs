@@ -4,6 +4,7 @@ public class Weight : MonoBehaviour {
 
 	public float distanceFromChainEnd = 0.6f;
 
+	//Connects rope to weight
 	public void ConnectRopeEnd (Rigidbody2D endRB)
 	{
 		HingeJoint2D joint = gameObject.AddComponent<HingeJoint2D>();

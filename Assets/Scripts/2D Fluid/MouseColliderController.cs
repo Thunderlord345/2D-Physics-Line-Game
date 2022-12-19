@@ -13,7 +13,7 @@ public class MouseColliderController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetMouseButton (0)) {
+		if (Input.GetMouseButton (0)) { //if left click is held down, activate mouse circle collider
 			col.enabled = true;
 			col.transform.position = (Vector2) Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		} else {
