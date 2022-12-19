@@ -8,6 +8,7 @@ public class Menus : MonoBehaviour
     public string play;
     public string instructions;
     public string credits;
+    public string menu;
 
 
     public void LevelSelect()
@@ -23,6 +24,11 @@ public class Menus : MonoBehaviour
     public void Credits()
     {
         SceneManager.LoadScene(credits);
+    }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene(menu);
     }
 
     public void Quit()
