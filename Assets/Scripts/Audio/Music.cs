@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicClip : MonoBehaviour
+public class MusicClip 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string name;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioClip clip;
+
+    [Range(0f, 1f)]
+    public float volume;
+
+    [Range(0.1f, 3f)]
+    public float pitch;
+
+    public bool loop;
+
+    [HideInInspector]
+    public AudioSource source;
+
 }
