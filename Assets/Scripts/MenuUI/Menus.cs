@@ -5,34 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class Menus : MonoBehaviour
 {
-    public string play;
-    public string instructions;
-    public string credits;
-    public string menu;
+    public AudioClip buttonSound;
+    public AudioSource audioSource;
 
-
-    public void LevelSelect()
+    public void SceneSelect(string scene)
     {
-        SceneManager.LoadScene(play);
-    }
-
-    public void Instructions()
-    {
-        SceneManager.LoadScene(instructions);
-    }
-
-    public void Credits()
-    {
-        SceneManager.LoadScene(credits);
-    }
-
-    public void BackToMain()
-    {
-        SceneManager.LoadScene(menu);
+        StartCoroutine(ButtonAudio(scene));
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+
+    IEnumerator ButtonAudio(string scene)
+    {
+        audioSource.PlayOneShot(buttonSound);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(scene);
     }
 }

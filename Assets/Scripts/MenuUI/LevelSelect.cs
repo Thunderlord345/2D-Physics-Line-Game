@@ -12,7 +12,7 @@ public class LevelSelect : MonoBehaviour
 
     public Button[] levelButtons;
     public AudioClip audio;
-    AudioSource audioSource;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,14 +28,15 @@ public class LevelSelect : MonoBehaviour
 
     public void Select(string levelName)
     {
-        StartCoroutine(ButtonSound());
-        SceneManager.LoadScene(levelName);
+        StartCoroutine(ButtonSound(levelName));
+       
     }
 
-    IEnumerator ButtonSound()
+    IEnumerator ButtonSound(string levelName)
     {
         audioSource.PlayOneShot(audio);
         yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(levelName);
     }
    
 }

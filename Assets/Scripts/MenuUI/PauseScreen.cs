@@ -8,11 +8,11 @@ public class PauseScreen : MonoBehaviour
     public bool isPaused;
     public GameObject background;
 
-    Menus backToMain;
+    public string menu;
 
     private void Start()
     {
-        backToMain = GetComponent<Menus>();
+       
     }
     
     public void Pause()
@@ -33,7 +33,7 @@ public class PauseScreen : MonoBehaviour
     public void BackToMenu()
     {
         Resume();
-        SceneManager.LoadScene(backToMain.menu);
+        SceneManager.LoadScene(menu);
     }
 
     public void Restart()
