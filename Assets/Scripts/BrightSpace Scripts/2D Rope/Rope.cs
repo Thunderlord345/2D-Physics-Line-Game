@@ -29,7 +29,7 @@ public class Rope : MonoBehaviour {
 				previousRB = link.GetComponent<Rigidbody2D>(); //One side is attached to joint
 			} else
 			{
-				weigth.ConnectRopeEnd(link.GetComponent<Rigidbody2D>()); //Other side attached to weight
+				weigth.ConnectRopeEnd(link.GetComponent<Rigidbody2D>()); //Attached rope to weight
 			}
 
 			

@@ -11,7 +11,9 @@ public class RopeCutter : MonoBehaviour {
 			{
 				if (hit.collider.tag == "Link")
 				{
+
 					Destroy(hit.collider.gameObject); //Cuts "Rope" by removing one "Link"
+					Destroy(hit.transform.parent.gameObject, 2f); //Removes all rope + anchor , use alpha if want to fade out
 				}
 			}
 		}
