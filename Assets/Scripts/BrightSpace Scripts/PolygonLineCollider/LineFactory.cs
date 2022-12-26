@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [DisallowMultipleComponent]
 public class LineFactory : MonoBehaviour
@@ -20,7 +21,7 @@ public class LineFactory : MonoBehaviour
 
 	
 	public int lineLimit;
-
+	public TextMeshProUGUI lineCount;
 
 
 	void Awake ()
@@ -74,8 +75,10 @@ public class LineFactory : MonoBehaviour
         {
 			isRunning = false;
         }
-		
+
+		LimitCount();
 	}
+
 
 	private void CreateNewLine ()
 	{
@@ -125,4 +128,11 @@ public class LineFactory : MonoBehaviour
 		ON_RELASE}
 
 	;
+
+	void LimitCount()
+	{
+		int fakeLineLimit = lineLimit + 1;
+		lineCount.text = fakeLineLimit.ToString();
+		
+	}
 }
