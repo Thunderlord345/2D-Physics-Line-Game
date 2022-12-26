@@ -1139,6 +1139,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
+      propertyPath: lineLimit
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
+      propertyPath: lineEnableMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4829955211201626895, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: m_Name
       value: Lines
@@ -1447,7 +1455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293904947979303802, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.22
+      value: -4.058
       objectReference: {fileID: 0}
     - target: {fileID: 8293904947979303802, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
       propertyPath: m_LocalPosition.y

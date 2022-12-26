@@ -70,7 +70,7 @@ public class LineFactory : MonoBehaviour
 			}
 		}
 
-		if (lineLimit == 0)
+		if (lineLimit < 0)
         {
 			isRunning = false;
         }
