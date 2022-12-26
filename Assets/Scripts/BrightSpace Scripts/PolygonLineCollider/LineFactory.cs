@@ -9,6 +9,7 @@ public class LineFactory : MonoBehaviour
 	public GameObject linePrefab;
 	[HideInInspector]
 	public Line currentLine;
+	public List<GameObject> linePrefabs = new List<GameObject>();
 	public Transform lineParent;
 	public RigidbodyType2D lineRigidBodyType = RigidbodyType2D.Kinematic;
 	public LineEnableMode lineEnableMode = LineEnableMode.ON_CREATE;
@@ -16,6 +17,11 @@ public class LineFactory : MonoBehaviour
 	public Image lineLife;
 	public bool enableLineLife;
 	public bool isRunning;
+
+	
+	public int lineLimit;
+
+
 
 	void Awake ()
 	{
@@ -63,11 +69,19 @@ public class LineFactory : MonoBehaviour
 				RelaseCurrentLine ();
 			}
 		}
+
+		if (lineLimit == 0)
+        {
+			isRunning = false;
+        }
+		
 	}
 
 	private void CreateNewLine ()
 	{
 		currentLine = (Instantiate (linePrefab, Vector3.zero, Quaternion.identity) as GameObject).GetComponent<Line> ();
+		linePrefabs.Add(linePrefab);
+		lineLimit--;
 		currentLine.name = "Line";
 		currentLine.transform.SetParent (lineParent);
 		currentLine.SetRigidBodyType (lineRigidBodyType);
