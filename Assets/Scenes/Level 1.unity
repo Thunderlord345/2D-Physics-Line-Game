@@ -848,6 +848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4746105966026361847, guid: b5b8af4d6783bf04696e78eb13cd8fd5, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4746105966026361849, guid: b5b8af4d6783bf04696e78eb13cd8fd5, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1431,6 +1435,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 7bc92aa534662d14691eb145d2741e01, type: 2}
+    - target: {fileID: 3176916040948722628, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8293904947979303802, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1449,11 +1457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293904947979303802, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8293904947979303802, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.01
+      value: 4.74
       objectReference: {fileID: 0}
     - target: {fileID: 8293904947979303802, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: bb04ddb130ddef344a6ad762bf1625b3
-timeCreated: 1489602625
-licenseType: Store
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - linePrefab: {fileID: 1200634299604260, guid: f7db69177733d2746a5e09f9dbe77df0, type: 3}
+  - currentLine: {instanceID: 0}
+  - lineParent: {instanceID: 0}
+  - lineLife: {instanceID: 0}
+  - lineCount: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
