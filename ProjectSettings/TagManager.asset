@@ -8,6 +8,7 @@ TagManager:
   - VechicleUISpeed
   - Link
   - Line
+  - Ball
   layers:
   - Default
   - TransparentFX

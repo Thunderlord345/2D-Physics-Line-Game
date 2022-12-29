@@ -12,9 +12,13 @@ public class GravityZone : MonoBehaviour
         rb = ball.GetComponent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        rb.gravityScale = -1;
+        if (other.tag == "Ball")
+            rb.gravityScale = -1;
+        
+            
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)

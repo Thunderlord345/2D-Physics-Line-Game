@@ -132,7 +132,7 @@ public class LineFactory : MonoBehaviour
 	void LimitCount()
 	{
 		int fakeLineLimit = lineLimit + 1;
-		lineCount.text = fakeLineLimit.ToString();
+		lineCount.text = "Line Limit: " + fakeLineLimit.ToString();
 		
 	}
 }
