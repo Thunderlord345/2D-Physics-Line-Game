@@ -6,17 +6,14 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI highScoreText;
+   
 
     public int score = 0;
     public int highScore = 0;
 
-    public GameObject star1;
-    public GameObject star2;
-    public GameObject star3;
+    public GameObject[] stars;
 
-    int levelNumber;
+    public int levelNumber;
     private void Start()
     {
         highScore = PlayerPrefs.GetInt("Highscore" + levelNumber, 0);
@@ -28,13 +25,13 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         StarDisplayScore();
+        
     }
 
     public void AddScore(int scoreAdd)
     {
         score += scoreAdd;
-        scoreText.text = "Score: " + score.ToString();
-
+ 
         //If score is greater than highscore, use score
         if (highScore < score)
             PlayerPrefs.SetInt("Highscore" + levelNumber, score);
@@ -46,27 +43,57 @@ public class ScoreManager : MonoBehaviour
         switch (score)
         {
             case 0:
-                star1.SetActive(false);
-                star2.SetActive(false);
-                star3.SetActive(false);
+                stars[0].SetActive(false);
+                stars[1].SetActive(false);
+                stars[2].SetActive(false);
                 break;
             //If score is 10 (1 coin collected) show 1 star on levelselect
             case 10:
-                star1.SetActive(true);
-                star2.SetActive(false);
-                star3.SetActive(false);
+                stars[0].SetActive(true);
+                stars[1].SetActive(false);
+                stars[2].SetActive(false);
                 break;
             //If score is 20 (2 coins collected) show 2 stars on levelSelect 
             case 20:
-                star1.SetActive(true);
-                star2.SetActive(true);
-                star3.SetActive(false);
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(false);
                 break;
             //If score is 30 (3 coins collected) show 3 stars on levelSelect 
             case 30:
-                star1.SetActive(true);
-                star2.SetActive(true);
-                star3.SetActive(true);
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(true);
+                break;
+        }
+    }
+
+    public void StarDisplayHighScore()
+    {
+        switch (highScore)
+        {
+            case 0:
+                stars[0].SetActive(false);
+                stars[1].SetActive(false);
+                stars[2].SetActive(false);
+                break;
+            //If score is 10 (1 coin collected) show 1 star on levelselect
+            case 10:
+                stars[0].SetActive(true);
+                stars[1].SetActive(false);
+                stars[2].SetActive(false);
+                break;
+            //If score is 20 (2 coins collected) show 2 stars on levelSelect 
+            case 20:
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(false);
+                break;
+            //If score is 30 (3 coins collected) show 3 stars on levelSelect 
+            case 30:
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(true);
                 break;
         }
     }
