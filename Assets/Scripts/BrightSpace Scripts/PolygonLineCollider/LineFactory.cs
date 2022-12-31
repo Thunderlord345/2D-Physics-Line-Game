@@ -19,7 +19,7 @@ public class LineFactory : MonoBehaviour
 	public bool enableLineLife;
 	public bool isRunning;
 
-	public GameObject ropeCutter;
+	
 	public int lineLimit;
 	public TextMeshProUGUI lineCount;
 
@@ -48,7 +48,7 @@ public class LineFactory : MonoBehaviour
 			}
 		}
 
-		ropeCutter.SetActive(false);
+		
 	}
 	
 	// Update is called once per frame
@@ -139,7 +139,7 @@ public class LineFactory : MonoBehaviour
 		if(fakeLineLimit <= 0)
         {
 			fakeLineLimit = 0;
-			ropeCutter.SetActive(true);
+			
         }
 		lineCount.text = "Line Limit: " + fakeLineLimit.ToString();
 		
