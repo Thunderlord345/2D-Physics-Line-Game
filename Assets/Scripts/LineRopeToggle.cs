@@ -14,18 +14,26 @@ public class LineRopeToggle : MonoBehaviour
     Color scissorsAlpha;
     Color lineAlpha;
 
+    public GameObject cutter;
+    public GameObject lineFact;
+
     private void Start()
     {
         //Assign color to image;
         scissorsAlpha = scissors.color;
         lineAlpha = line.color;
 
+        LineDrawer();
+
     }
     public void RopeCutter()
     {
+        cutter.SetActive(true);
+        lineFact.SetActive(false);
+
         //Buttons enabled & disabled
-        ropeCutter.enabled = true;
-        lineDrawer.enabled = false;
+        ropeCutter.interactable = false;
+        lineDrawer.interactable = true;
 
         //Alpha 
         scissorsAlpha.a = 1f;
@@ -35,8 +43,11 @@ public class LineRopeToggle : MonoBehaviour
 
     public void LineDrawer()
     {
-        lineDrawer.enabled = true;
-        ropeCutter.enabled = false;
+        lineFact.SetActive(true);
+        cutter.SetActive(false);
+
+        lineDrawer.interactable = false;
+        ropeCutter.interactable = true;
 
         scissorsAlpha.a = 0.6f;
         lineAlpha.a = 1f;
