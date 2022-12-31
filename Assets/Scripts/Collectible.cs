@@ -6,11 +6,13 @@ public class Collectible : MonoBehaviour
 {
     ScoreManager sc;
     public int scoreValue = 10;
+    public GameObject coin;
+    public GameObject scoreManager;
 
     public Vector3 rotationRate;
     private void Start()
     {
-        sc = GetComponent<ScoreManager>();
+        sc = scoreManager.GetComponent<ScoreManager>();
     }
     private void Update()
     {

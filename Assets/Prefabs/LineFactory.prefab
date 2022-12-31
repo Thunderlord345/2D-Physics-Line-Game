@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4829955211201626893}
   - component: {fileID: 4829955211201626894}
   m_Layer: 0
-  m_Name: Lines
+  m_Name: LineFactory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,9 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 1200634299604260, guid: f7db69177733d2746a5e09f9dbe77df0, type: 3}
   currentLine: {fileID: 0}
+  linePrefabs: []
   lineParent: {fileID: 4829955211201626893}
   lineRigidBodyType: 1
   lineEnableMode: 0
   lineLife: {fileID: 0}
   enableLineLife: 0
   isRunning: 1
+  ropeCutter: {fileID: 0}
+  lineLimit: 0
+  lineCount: {fileID: 0}
