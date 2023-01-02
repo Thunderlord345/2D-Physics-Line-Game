@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 63008390}
   - component: {fileID: 63008389}
   m_Layer: 0
-  m_Name: Walls
+  m_Name: Barriers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
