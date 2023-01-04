@@ -21,6 +21,7 @@ public class LineFactory : MonoBehaviour
 
 	
 	public int lineLimit;
+	public int defaultLineLimit;
 	public TextMeshProUGUI lineCount;
 
 
@@ -145,4 +146,18 @@ public class LineFactory : MonoBehaviour
 		
 		
 	}
+
+	public void ClearLines()
+    {
+		 linePrefab = GameObject.FindGameObjectWithTag("Line");
+		if (linePrefab == null)
+			return;
+
+		foreach(GameObject line in linePrefabs)
+        {
+			Destroy(line);
+        }
+
+		lineLimit = defaultLineLimit;
+    }
 }
