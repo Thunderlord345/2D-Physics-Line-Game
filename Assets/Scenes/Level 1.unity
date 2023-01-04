@@ -210,6 +210,8 @@ GameObject:
   - component: {fileID: 63008391}
   - component: {fileID: 63008390}
   - component: {fileID: 63008389}
+  - component: {fileID: 63008393}
+  - component: {fileID: 63008392}
   m_Layer: 0
   m_Name: Barriers
   m_TagString: Untagged
@@ -283,6 +285,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63008392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63008388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f4178ce5ab1284f9ed3ff87f78057e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loseScreen: {fileID: 2025811135}
+--- !u!61 &63008393
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63008388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.688652, y: -10.56768}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 24.990345, y: 1.3408928}
+  m_EdgeRadius: 0
 --- !u!1001 &103868510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2753,6 +2794,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1316141475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8293904947979303804, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
+  m_PrefabInstance: {fileID: 8293904947279422943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1323312251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,7 +2851,7 @@ MonoBehaviour:
   isPaused: 0
   background: {fileID: 1510918771}
   menu: Menus
-  levelSelect: 
+  levelSelect: LevelSelect
 --- !u!1 &1355914854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,7 +3242,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -6899708260408705040, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
   m_PrefabInstance: {fileID: 8293904947279422943}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1316141475}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 122cae6a067d32d43a4f52cc0f826fd9, type: 3}
@@ -3600,6 +3646,7 @@ MonoBehaviour:
   levelToLoad: 2
   levelToUnlock: 1
   winScreen: {fileID: 1979787888}
+  ball: {fileID: 1316141475}
 --- !u!4 &1658491779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2334671122114664588, guid: 2c0a5bc0169db6642996eef5543b1abb, type: 3}

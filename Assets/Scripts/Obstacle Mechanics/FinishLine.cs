@@ -8,6 +8,7 @@ public class FinishLine : MonoBehaviour
     public string levelToLoad;
     public int levelToUnlock;
     public GameObject winScreen;
+    public GameObject ball;
 
     private void Start()
     {
@@ -21,8 +22,11 @@ public class FinishLine : MonoBehaviour
     IEnumerator Win()
     {
         PlayerPrefs.SetInt("levelUnlocked", levelToUnlock);
-        yield return new WaitForSeconds(0.5f);
         winScreen.SetActive(true);
+        Destroy(ball);
+
+        yield return new WaitForSeconds(0.5f);
+        
     }
 
     public void NextLevel()
