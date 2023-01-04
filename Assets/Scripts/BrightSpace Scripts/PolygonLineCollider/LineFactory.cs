@@ -183,9 +183,11 @@ public class LineFactory : MonoBehaviour
 
 		foreach(GameObject line in linePrefabs)
         {
-			Destroy(line);
-        }
+			DestroyImmediate(linePrefab, true);
+			
+		}
 
 		lineLimit = defaultLineLimit;
-    }
+		
+	}
 }
