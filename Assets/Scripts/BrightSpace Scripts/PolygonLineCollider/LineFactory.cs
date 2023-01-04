@@ -19,11 +19,19 @@ public class LineFactory : MonoBehaviour
 	public bool enableLineLife;
 	public bool isRunning;
 
-	
+	[Header("Score")]
 	public int lineLimit;
 	public int defaultLineLimit;
 	public TextMeshProUGUI lineCount;
 
+	[Header("Color")]
+	public Image bg;
+	public Image scissors;
+	Color bgAlpha;
+	Color scissorsAlpha;
+
+	public GameObject cutter;
+	
 
 	void Awake ()
 	{
@@ -32,6 +40,8 @@ public class LineFactory : MonoBehaviour
 		} else {
 			Destroy (gameObject);
 		}
+
+		
 	}
 
 	// Use this for initialization
@@ -49,7 +59,17 @@ public class LineFactory : MonoBehaviour
 			}
 		}
 
-		
+
+		bgAlpha = bg.color;
+		scissorsAlpha = scissors.color;
+
+		bgAlpha.a = 0.6f;
+		scissorsAlpha.a = 0.6f;
+
+		bg.color = bgAlpha;
+		scissors.color = scissorsAlpha;	
+
+	
 	}
 	
 	// Update is called once per frame
@@ -77,9 +97,18 @@ public class LineFactory : MonoBehaviour
         {
 			isRunning = false;
 			lineLimit = 0;
-        }
+			cutter.SetActive(true);
+
+			bgAlpha.a = 1f;
+			scissorsAlpha.a = 1f;
+
+			bg.color = bgAlpha;
+			scissors.color = scissorsAlpha;
+		}
 
 		LimitCount();
+
+		
 	}
 
 
@@ -132,7 +161,7 @@ public class LineFactory : MonoBehaviour
 
 	;
 
-	void LimitCount()
+	public void LimitCount() //Counts lines left
 	{
 		
 		int fakeLineLimit = lineLimit - 1;
@@ -143,11 +172,10 @@ public class LineFactory : MonoBehaviour
 			
         }
 		lineCount.text = "Line Limit: " + fakeLineLimit.ToString();
-		
-		
+
 	}
 
-	public void ClearLines()
+	public void ClearLines() //Clears lines
     {
 		 linePrefab = GameObject.FindGameObjectWithTag("Line");
 		if (linePrefab == null)

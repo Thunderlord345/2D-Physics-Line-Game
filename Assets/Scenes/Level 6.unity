@@ -553,11 +553,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: lineLimit
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: lineEnableMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
+      propertyPath: defaultLineLimit
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4829955211201626895, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: m_Name

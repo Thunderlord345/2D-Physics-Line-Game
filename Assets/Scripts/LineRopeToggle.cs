@@ -16,15 +16,20 @@ public class LineRopeToggle : MonoBehaviour
 
     public GameObject cutter;
     public GameObject lineFact;
-
+    LineFactory lf;
     private void Start()
     {
+        lf = FindObjectOfType<LineFactory>();
         //Assign color to image;
         scissorsAlpha = scissors.color;
         lineAlpha = line.color;
 
-        LineDrawer();
+        cutter.SetActive(false);
 
+    }
+
+    private void Update()
+    {
     }
     public void RopeCutter()
     {
