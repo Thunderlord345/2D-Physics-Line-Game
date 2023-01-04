@@ -9,10 +9,11 @@ public class PauseScreen : MonoBehaviour
     public GameObject background;
 
     public string menu;
+    public string levelSelect;
 
     private void Start()
     {
-       
+        background.SetActive(false);
     }
     
     public void Pause()
@@ -34,6 +35,11 @@ public class PauseScreen : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene(menu);
+    }
+
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene(levelSelect);
     }
 
     public void Restart()
