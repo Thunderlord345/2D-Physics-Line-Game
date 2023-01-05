@@ -38,5 +38,10 @@ public class LevelSelect : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene(levelName);
     }
+
+    public void ClearPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
    
 }
