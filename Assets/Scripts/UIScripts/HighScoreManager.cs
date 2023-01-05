@@ -5,7 +5,7 @@ using UnityEngine;
 public class HighScoreManager : MonoBehaviour
 {
     int highScore;
-    public int levelNumber;
+    
 
     public GameObject[] stars;
     public GameObject banner;
@@ -15,14 +15,14 @@ public class HighScoreManager : MonoBehaviour
     {
 
         sc = FindObjectOfType<ScoreManager>();
-        if (PlayerPrefs.HasKey("Highscore" + levelNumber))
+        if (PlayerPrefs.HasKey("Highscore" + sc.levelNumber))
         {
-            highScore = PlayerPrefs.GetInt("Highscore" + levelNumber);
+            highScore = PlayerPrefs.GetInt("Highscore" + sc.levelNumber);
             
         }
         else
         {
-            highScore = PlayerPrefs.GetInt("Highscore" + levelNumber, 0);
+            highScore = PlayerPrefs.GetInt("Highscore" + sc.levelNumber, 0);
         }
 
     }
@@ -37,7 +37,7 @@ public class HighScoreManager : MonoBehaviour
     {
         if(highScore < sc.score)
         {
-            PlayerPrefs.SetInt("Highscore" + levelNumber, sc.score);
+            PlayerPrefs.SetInt("Highscore" + sc.levelNumber, sc.score);
         }
     }
 

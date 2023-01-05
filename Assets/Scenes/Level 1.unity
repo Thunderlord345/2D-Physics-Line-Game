@@ -2575,12 +2575,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  highScore: 0
   stars:
   - {fileID: 389909597}
   - {fileID: 651969884}
   - {fileID: 120109730}
-  levelNumber: 0
+  levelNumber: 1
 --- !u!4 &1195016640
 Transform:
   m_ObjectHideFlags: 0
