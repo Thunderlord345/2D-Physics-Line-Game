@@ -1928,6 +1928,10 @@ MonoBehaviour:
   - {fileID: 23474214}
   - {fileID: 1978083730}
   - {fileID: 872400869}
+  - {fileID: 1111795983}
+  - {fileID: 1013578911}
+  - {fileID: 210147954}
+  - {fileID: 2037194712}
   audio: {fileID: 8300000, guid: 6e8a09b7a0e41ed458c5b30236093a56, type: 3}
   audioSource: {fileID: 1302225118}
 --- !u!4 &1302225117
