@@ -35,6 +35,7 @@ public class PauseScreen : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene(menu);
+        AudioSingleton.instance.Play("Menus");
     }
 
     public void LevelSelect()
