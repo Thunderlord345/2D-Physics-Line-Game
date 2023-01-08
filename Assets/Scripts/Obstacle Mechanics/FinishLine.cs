@@ -9,9 +9,11 @@ public class FinishLine : MonoBehaviour
     public int levelToUnlock;
     public GameObject winScreen;
     public GameObject ball;
-
+    public GameObject[] stars;
+    ScoreManager sc;
     private void Start()
     {
+        sc = FindObjectOfType<ScoreManager>();
         winScreen.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,6 +25,7 @@ public class FinishLine : MonoBehaviour
     {
         PlayerPrefs.SetInt("levelUnlocked", levelToUnlock);
         winScreen.SetActive(true);
+        StarDisplayScore();
         Destroy(ball);
 
         yield return new WaitForSeconds(0.5f);
@@ -32,5 +35,35 @@ public class FinishLine : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(levelToLoad);
+    }
+
+    public void StarDisplayScore()
+    {
+        switch (sc.score)
+        {
+            case 0:
+                stars[0].SetActive(false);
+                stars[1].SetActive(false);
+                stars[2].SetActive(false);
+                break;
+            //If score is 10 (1 coin collected) show 1 star on levelselect
+            case 10:
+                stars[0].SetActive(true);
+                stars[1].SetActive(false);
+                stars[2].SetActive(false);
+                break;
+            //If score is 20 (2 coins collected) show 2 stars on levelSelect 
+            case 20:
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(false);
+                break;
+            //If score is 30 (3 coins collected) show 3 stars on levelSelect 
+            case 30:
+                stars[0].SetActive(true);
+                stars[1].SetActive(true);
+                stars[2].SetActive(true);
+                break;
+        }
     }
 }

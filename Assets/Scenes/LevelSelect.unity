@@ -1036,10 +1036,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 3
   stars:
-  - {fileID: 2041039462}
   - {fileID: 842460280}
+  - {fileID: 2041039462}
   - {fileID: 1146586932}
   banner: {fileID: 1478842935}
 --- !u!1 &377766676
@@ -2355,10 +2354,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 0
   stars:
-  - {fileID: 392541035}
   - {fileID: 1584720466}
+  - {fileID: 392541035}
   - {fileID: 2004225343}
   banner: {fileID: 1057665732}
 --- !u!1 &1066846580
@@ -2547,10 +2545,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 5
   stars:
-  - {fileID: 1784724960}
   - {fileID: 2004067736}
+  - {fileID: 1784724960}
   - {fileID: 7993716}
   banner: {fileID: 1612550582}
 --- !u!1 &1111795981
@@ -3175,10 +3172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 1
   stars:
-  - {fileID: 1173355176}
   - {fileID: 1180521314}
+  - {fileID: 1173355176}
   - {fileID: 685414526}
   banner: {fileID: 1267941079}
 --- !u!1 &1302225115
@@ -3683,10 +3679,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 2
   stars:
-  - {fileID: 743067545}
   - {fileID: 2084399941}
+  - {fileID: 743067545}
   - {fileID: 1652198820}
   banner: {fileID: 1632206985}
 --- !u!1 &1584720466
@@ -3816,10 +3811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 6
   stars:
-  - {fileID: 635516630}
   - {fileID: 282976419}
+  - {fileID: 635516630}
   - {fileID: 1944982967}
   banner: {fileID: 1512695438}
 --- !u!1 &1612550582
@@ -4332,10 +4326,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelNumber: 4
   stars:
-  - {fileID: 1472708192}
   - {fileID: 56516332}
+  - {fileID: 1472708192}
   - {fileID: 585753481}
   banner: {fileID: 1513172688}
 --- !u!1 &1978083728
