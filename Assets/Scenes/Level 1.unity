@@ -1347,6 +1347,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: lengthInSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.13679248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5016475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270699347296643725, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2270699347296643725, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916508937892707240, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916508937892707240, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 5290717001295418542, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_Name
       value: FinishPortal
@@ -1377,7 +1437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315224053367351015, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.82
+      value: -6.07
       objectReference: {fileID: 0}
     - target: {fileID: 7315224053367351015, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_LocalPosition.z

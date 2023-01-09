@@ -1533,6 +1533,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: lengthInSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.8018868
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.29055792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.11
+      objectReference: {fileID: 0}
     - target: {fileID: 5290717001295418542, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_Name
       value: FinishPortal
@@ -1543,7 +1587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315224053367351015, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.83
+      value: 10.935
       objectReference: {fileID: 0}
     - target: {fileID: 7315224053367351015, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_LocalPosition.y
