@@ -456,6 +456,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: lengthInSec
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.97606134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276624119035078953, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.19339621
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 5290717001295418542, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_Name
       value: FinishPortal
