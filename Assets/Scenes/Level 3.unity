@@ -636,6 +636,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4037044471700403367, guid: c61f5cb123a7faf4289a152884723297, type: 3}
   m_PrefabInstance: {fileID: 456367446}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &456367454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4037044470953989189, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 456367446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678535753
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +765,7 @@ GameObject:
   - component: {fileID: 928438539}
   - component: {fileID: 928438538}
   - component: {fileID: 928438541}
+  - component: {fileID: 928438542}
   m_Layer: 0
   m_Name: Barriers
   m_TagString: Untagged
@@ -859,6 +865,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25.224625, y: 0.5842905}
   m_EdgeRadius: 0
+--- !u!114 &928438542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928438537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f4178ce5ab1284f9ed3ff87f78057e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loseScreen: {fileID: 456367454}
 --- !u!1001 &1313581835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1675,7 +1694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level 4
-  levelToUnlock: 4
+  levelToUnlock: 5
   winScreen: {fileID: 456367451}
   ball: {fileID: 1485664097}
   stars:

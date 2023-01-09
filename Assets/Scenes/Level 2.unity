@@ -1613,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level 3
-  levelToUnlock: 3
+  levelToUnlock: 4
   winScreen: {fileID: 1707891096}
   ball: {fileID: 1485664097}
   stars:
