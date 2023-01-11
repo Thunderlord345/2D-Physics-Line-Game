@@ -29,7 +29,7 @@ public class LevelSelect : MonoBehaviour
     public void Select(string levelName)
     {
         StartCoroutine(ButtonSound(levelName));
-       
+        AudioSingleton.instance.Stop("Menus");
     }
 
     IEnumerator ButtonSound(string levelName)
@@ -37,6 +37,7 @@ public class LevelSelect : MonoBehaviour
         audioSource.PlayOneShot(audio);
         yield return new WaitForSeconds(0.3f);
         SceneManager.LoadScene(levelName);
+        
     }
 
     public void ClearPrefs()

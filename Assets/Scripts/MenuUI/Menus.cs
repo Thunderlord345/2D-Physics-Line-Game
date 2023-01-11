@@ -23,6 +23,6 @@ public class Menus : MonoBehaviour
         audioSource.PlayOneShot(buttonSound);
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(scene);
-        AudioSingleton.instance.Stop("Menus");
+        
     }
 }
