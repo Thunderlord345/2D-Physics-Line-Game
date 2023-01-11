@@ -1435,6 +1435,10 @@ PrefabInstance:
       propertyPath: InitialModule.startLifetime.scalar
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2632559139031095188, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_ForceAngle
+      value: 270
+      objectReference: {fileID: 0}
     - target: {fileID: 2760102617551173644, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.66
