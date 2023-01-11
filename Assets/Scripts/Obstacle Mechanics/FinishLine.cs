@@ -16,9 +16,13 @@ public class FinishLine : MonoBehaviour
         sc = FindObjectOfType<ScoreManager>();
         winScreen.SetActive(false);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        StartCoroutine(Win());
+        if(other.tag == "Ball")
+        {
+            StartCoroutine(Win());
+        }
+        
     }
 
     IEnumerator Win()

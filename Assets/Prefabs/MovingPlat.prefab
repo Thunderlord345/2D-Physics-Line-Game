@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 6772099732323233377}
   - component: {fileID: 6772099732323233692}
   - component: {fileID: 8292207058434111543}
-  - component: {fileID: 1093879247135861064}
   m_Layer: 0
   m_Name: MovingPlat
   m_TagString: Untagged
@@ -285,26 +284,6 @@ SliderJoint2D:
   m_TranslationLimits:
     m_LowerTranslation: -1
     m_UpperTranslation: 2
---- !u!249 &1093879247135861064
-AreaEffector2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6772099732323233690}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGlobalAngle: 0
-  m_ForceAngle: 0
-  m_ForceMagnitude: 10
-  m_ForceVariation: 0
-  m_ForceTarget: 0
-  m_Drag: 0
-  m_AngularDrag: 0
 --- !u!1 &6772099732433265460
 GameObject:
   m_ObjectHideFlags: 0
