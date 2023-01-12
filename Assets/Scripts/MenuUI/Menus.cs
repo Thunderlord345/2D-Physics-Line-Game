@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menus : MonoBehaviour
 {
     public AudioClip buttonSound;
     public AudioSource audioSource;
+
+    [Header("PlayerPrefs Deletion")]
+    public Image full;
+    public Image empty;
 
     public void SceneSelect(string scene)
     {
@@ -23,6 +28,12 @@ public class Menus : MonoBehaviour
         audioSource.PlayOneShot(buttonSound);
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(scene);
+        
+    }
+
+    public void ClearPrefs()
+    {
+        PlayerPrefs.DeleteAll();
         
     }
 }

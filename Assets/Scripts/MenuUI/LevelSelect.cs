@@ -40,9 +40,6 @@ public class LevelSelect : MonoBehaviour
         
     }
 
-    public void ClearPrefs()
-    {
-        PlayerPrefs.DeleteAll();
-    }
+  
    
 }
