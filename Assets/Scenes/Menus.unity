@@ -2015,7 +2015,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 1, b: 0.76493406, a: 1}
+      maxColor: {r: 0.6057604, g: 0.4764151, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6803,7 +6803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2a26c20397dbe4480d971764b4ab07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSound: {fileID: 8300000, guid: 6e8a09b7a0e41ed458c5b30236093a56, type: 3}
+  buttonSound: {fileID: 8300000, guid: d4b9dd3aabe28804582563c03d7f4ade, type: 3}
   audioSource: {fileID: 1737398034}
   full: {fileID: 0}
   empty: {fileID: 0}

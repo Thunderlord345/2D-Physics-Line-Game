@@ -39,7 +39,7 @@ public class AudioSingleton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Play("Menu");
+        Play("Menus");
     }
 
     public void Play(string name)
