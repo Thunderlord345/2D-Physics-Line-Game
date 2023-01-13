@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HighScoreManager : MonoBehaviour
 {
-    int highScore;
+    public int highScore;
 
     
     public GameObject[] stars;
@@ -30,7 +30,7 @@ public class HighScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        UseScore();    
         StarDisplayHighScore();
     }
 
