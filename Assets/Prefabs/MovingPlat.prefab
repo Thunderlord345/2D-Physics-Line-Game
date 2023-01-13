@@ -276,7 +276,7 @@ SliderJoint2D:
   m_Angle: -89.82791
   m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 0.5
     m_MaximumMotorForce: 20
   m_UseLimits: 1
   m_TranslationLimits:

@@ -1399,6 +1399,10 @@ PrefabInstance:
       propertyPath: m_AutoConfigureAngle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8292207058434111543, guid: 648c77661c3182e498529071295b0851, type: 3}
+      propertyPath: m_Motor.m_MotorSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 648c77661c3182e498529071295b0851, type: 3}
 --- !u!1001 &1365626910
