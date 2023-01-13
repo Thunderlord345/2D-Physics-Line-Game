@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
     public string levelToLoad;
+    public string menu;
+    public string levelSelect;
     public int levelToUnlock;
     public GameObject winScreen;
     public GameObject ball;
@@ -38,9 +40,21 @@ public class FinishLine : MonoBehaviour
 
     public void NextLevel()
     {
+        Debug.Log("pressed");
         SceneManager.LoadScene(levelToLoad);
     }
 
+    public void Menu()
+    {
+        Debug.Log("pressed");
+        SceneManager.LoadScene(menu);
+    }
+
+    public void LevelSelect()
+    {
+        Debug.Log("pressed");
+        SceneManager.LoadScene(levelSelect);
+    }
     public void StarDisplayScore()
     {
         switch (sc.score)
