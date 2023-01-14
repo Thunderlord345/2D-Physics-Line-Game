@@ -5,44 +5,31 @@ using UnityEngine;
 public class HighScoreManager : MonoBehaviour
 {
     public int highScore;
-
-    
+    public int levelNumber;
     public GameObject[] stars;
     public GameObject banner;
-    ScoreManager sc;
+    
     // Start is called before the first frame update
     void Start()
     {
 
-        sc = FindObjectOfType<ScoreManager>();
-        if (PlayerPrefs.HasKey("Highscore" + sc.levelNumber))
-        {
-            highScore = PlayerPrefs.GetInt("Highscore" + sc.levelNumber);
-            
-        }
-        else
-        {
-            highScore = PlayerPrefs.GetInt("Highscore" + sc.levelNumber, 0);
-        }
+       
+        //tutorialHS = PlayerPrefs.GetInt("Highscore" + 0);
+        // lvl1HS = PlayerPrefs.GetInt("Highscore" + 1);
+        highScore = PlayerPrefs.GetInt("Highscore" + levelNumber);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        UseScore();    
-        StarDisplayHighScore();
+       
+        HighScoreStarUpdate();
     }
 
-    public void UseScore()
-    {
-        if(highScore < sc.score)
-        {
-            PlayerPrefs.SetInt("Highscore" + sc.levelNumber, sc.score);
-        }
-    }
+   
 
-    public void StarDisplayHighScore()
+    public void HighScoreStarUpdate()
     {
         switch (highScore)
         {

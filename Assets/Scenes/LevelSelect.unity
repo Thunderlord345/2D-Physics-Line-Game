@@ -518,7 +518,7 @@ GameObject:
   - component: {fileID: 189933968}
   - component: {fileID: 189933967}
   m_Layer: 0
-  m_Name: Square
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5925,6 +5925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 3
   stars:
   - {fileID: 842460280}
@@ -7244,6 +7245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 0
   stars:
   - {fileID: 1584720466}
@@ -7436,6 +7438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 5
   stars:
   - {fileID: 2004067736}
@@ -8064,6 +8067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 1
   stars:
   - {fileID: 1180521314}
@@ -8572,6 +8576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 2
   stars:
   - {fileID: 2084399941}
@@ -8705,6 +8710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 6
   stars:
   - {fileID: 282976419}
@@ -9221,6 +9227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6deed0d385acc1c4ea12fc381ad648d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: 0
   levelNumber: 4
   stars:
   - {fileID: 56516332}

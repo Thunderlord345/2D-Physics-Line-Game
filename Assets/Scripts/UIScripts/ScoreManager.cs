@@ -7,14 +7,14 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
-    
+    public int highScore;
 
     public GameObject[] stars;
 
     public int levelNumber;
     private void Start()
     {
-
+        highScore = PlayerPrefs.GetInt("Highscore" + levelNumber);
 
     }
 
@@ -22,6 +22,7 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UseScore();
         StarDisplayScore();
 
     }
@@ -32,6 +33,14 @@ public class ScoreManager : MonoBehaviour
 
     }
 
+    public void UseScore()
+    {
+        if (score > highScore)
+        {
+           PlayerPrefs.SetInt("Highscore" + levelNumber, score);
+        }
+
+    }
 
     public void StarDisplayScore()
     {
