@@ -9,9 +9,7 @@ public class Menus : MonoBehaviour
     public AudioClip buttonSound;
     public AudioSource audioSource;
 
-    [Header("PlayerPrefs Deletion")]
-    public Image full;
-    public Image empty;
+    
 
     public void SceneSelect(string scene)
     {
