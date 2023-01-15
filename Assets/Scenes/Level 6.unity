@@ -1226,6 +1226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  highScore: 0
   stars:
   - {fileID: 1663772981}
   - {fileID: 1663772980}
@@ -2092,6 +2093,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4037044471028402754, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3875295187953186855}
+    - target: {fileID: 4037044471028402754, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 4037044471179022986, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2262,6 +2271,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1663772988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5872466661280626022, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 1663772977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1663772989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3176900162925806976, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 1663772977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1663772990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7452123966803294304, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 1663772977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1805430452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,15 +2922,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: LevelSelect
-  menu: 
-  levelSelect: 
   levelToUnlock: 0
   winScreen: {fileID: 1663772979}
   ball: {fileID: 1485664097}
   stars:
-  - {fileID: 1663772983}
   - {fileID: 1663772984}
+  - {fileID: 1663772983}
   - {fileID: 1663772982}
+  blankStars:
+  - {fileID: 1663772990}
+  - {fileID: 1663772989}
+  - {fileID: 1663772988}
 --- !u!4 &3875295187953186856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7315224053367351015, guid: b48543679a25de34689c59341867aa14, type: 3}

@@ -458,7 +458,7 @@ Transform:
   m_LocalScale: {x: 1.597701, y: 2.5111227, z: 1.252082}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257874758
 GameObject:
@@ -619,7 +619,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &422123277 stripped
 GameObject:
@@ -863,7 +863,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &737998442 stripped
 Transform:
@@ -877,6 +877,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4037044471028402754, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1646497128}
+    - target: {fileID: 4037044471028402754, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 4037044471988772193, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -891,7 +899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4037044471988772198, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4037044471988772198, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1020,6 +1028,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &783390404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5872466661280626022, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 783390396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &783390405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3176900162925806976, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 783390396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &783390406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7452123966803294304, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 783390396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &790855461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1204,7 @@ Transform:
   - {fileID: 1134910753}
   - {fileID: 1727597257}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1001 &872029571
 PrefabInstance:
@@ -1340,6 +1363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  highScore: 0
   stars:
   - {fileID: 422123277}
   - {fileID: 1422169754}
@@ -1709,15 +1733,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level 5
-  menu: 
-  levelSelect: 
   levelToUnlock: 6
   winScreen: {fileID: 35473912}
   ball: {fileID: 1485664097}
   stars:
-  - {fileID: 783390398}
   - {fileID: 783390399}
+  - {fileID: 783390398}
   - {fileID: 783390397}
+  blankStars:
+  - {fileID: 783390406}
+  - {fileID: 783390405}
+  - {fileID: 783390404}
 --- !u!4 &1727597257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1141535709746470245, guid: 61c3b07b00c545a418278c6faf72ee57, type: 3}
@@ -1751,7 +1777,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912587321
 GameObject:
@@ -1817,7 +1843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1962460214
 PrefabInstance:
