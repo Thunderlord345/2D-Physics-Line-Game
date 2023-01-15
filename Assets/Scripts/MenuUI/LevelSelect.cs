@@ -35,7 +35,7 @@ public class LevelSelect : MonoBehaviour
     IEnumerator ButtonSound(string levelName)
     {
         audioSource.PlayOneShot(audio);
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.45f);
         SceneManager.LoadScene(levelName);
         
     }

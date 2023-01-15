@@ -18,6 +18,7 @@ public class Menus : MonoBehaviour
 
     public void Quit()
     {
+        audioSource.PlayOneShot(buttonSound);
         Application.Quit();
     }
 
@@ -31,6 +32,7 @@ public class Menus : MonoBehaviour
 
     public void ClearPrefs()
     {
+        audioSource.PlayOneShot(buttonSound);
         PlayerPrefs.DeleteAll();
         
     }
