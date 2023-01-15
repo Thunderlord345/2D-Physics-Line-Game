@@ -40,7 +40,9 @@ public class PauseScreen : MonoBehaviour
 
     public void LevelSelect()
     {
+        Resume();
         SceneManager.LoadScene(levelSelect);
+        AudioSingleton.instance.Play("Menus");
     }
 
     public void Restart()
