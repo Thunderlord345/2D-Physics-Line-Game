@@ -9,6 +9,9 @@ public class Collectible : MonoBehaviour
     public GameObject coin;
     public GameObject scoreManager;
 
+    public AudioSource audioSource;
+    public AudioClip collectSound;
+
     public Vector3 rotationRate;
     private void Start()
     {
@@ -24,7 +27,7 @@ public class Collectible : MonoBehaviour
         if(other.tag == "Ball")
         {
             sc.AddScore(scoreValue);
-
+            audioSource.PlayOneShot(collectSound);
             Destroy(gameObject);
         }
     }

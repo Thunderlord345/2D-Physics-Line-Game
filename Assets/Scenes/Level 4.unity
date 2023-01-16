@@ -681,6 +681,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible
       objectReference: {fileID: 0}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 783390407}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 964819320}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db34102882a903449b2399424d4d1647, type: 3}
 --- !u!1001 &570887565
@@ -1047,6 +1055,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7452123966803294304, guid: c61f5cb123a7faf4289a152884723297, type: 3}
   m_PrefabInstance: {fileID: 783390396}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &783390407 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 924728098805805742, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 783390396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &790855461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1278,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 783390407}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 964819320}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db34102882a903449b2399424d4d1647, type: 3}
 --- !u!1001 &942089737
@@ -2223,6 +2244,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 783390407}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 964819320}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db34102882a903449b2399424d4d1647, type: 3}
 --- !u!1001 &2120398652

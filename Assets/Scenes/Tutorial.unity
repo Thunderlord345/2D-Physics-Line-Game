@@ -263,6 +263,10 @@ PrefabInstance:
       value: Collectible
       objectReference: {fileID: 0}
     - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1504830413}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 1459441201}
@@ -457,6 +461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1504830413}
     - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
       propertyPath: scoreManager
       value: 
@@ -1480,6 +1488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1504830413}
     - target: {fileID: 139998841599585031, guid: db34102882a903449b2399424d4d1647, type: 3}
       propertyPath: scoreManager
       value: 

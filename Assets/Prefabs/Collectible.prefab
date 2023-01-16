@@ -100,6 +100,8 @@ MonoBehaviour:
   scoreValue: 10
   coin: {fileID: 139998841599585030}
   scoreManager: {fileID: 0}
+  audioSource: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: e183daebcd375394cb12c460ff785d9c, type: 3}
   rotationRate: {x: 0, y: 150, z: 0}
 --- !u!58 &5526996184539342172
 CircleCollider2D:
