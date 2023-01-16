@@ -265,7 +265,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
 --- !u!1 &141653429 stripped
 GameObject:
@@ -285,6 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 783390400}
+  audioSource: {fileID: 783390407}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!1001 &175780307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,7 +355,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
 --- !u!1 &175780308 stripped
 GameObject:
@@ -372,6 +376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 783390400}
+  audioSource: {fileID: 783390407}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!4 &201501758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2795971078114271548, guid: 34ad0207119045343a05394a93f4bfd7, type: 3}
@@ -1159,6 +1165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 783390400}
+  audioSource: {fileID: 783390407}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &790855466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1769,6 +1777,8 @@ MonoBehaviour:
   - {fileID: 783390406}
   - {fileID: 783390405}
   - {fileID: 783390404}
+  source: {fileID: 3875295187953186854}
+  winSound: {fileID: 8300000, guid: 50cbaacc6b24dea4894058429e41653c, type: 3}
 --- !u!1 &1701527168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,6 +2455,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1770307027, guid: b48543679a25de34689c59341867aa14, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b48543679a25de34689c59341867aa14, type: 3}
+--- !u!82 &3875295187953186854 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2888023125856272294, guid: b48543679a25de34689c59341867aa14, type: 3}
+  m_PrefabInstance: {fileID: 3875295187953186853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8293904947279422943
 PrefabInstance:
   m_ObjectHideFlags: 0

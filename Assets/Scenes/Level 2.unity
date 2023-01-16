@@ -221,6 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 1707891097}
+  audioSource: {fileID: 1707891104}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!1 &134439598
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 1707891097}
+  audioSource: {fileID: 0}
+  deathSound: {fileID: 0}
 --- !u!61 &134439602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1081,7 +1085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4809234943555784508, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4809234943555784508, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1888,6 +1892,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.11
       objectReference: {fileID: 0}
+    - target: {fileID: 2888023125856272294, guid: b48543679a25de34689c59341867aa14, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5290717001295418542, guid: b48543679a25de34689c59341867aa14, type: 3}
       propertyPath: m_Name
       value: FinishPortal
@@ -1988,6 +1996,13 @@ MonoBehaviour:
   - {fileID: 1707891103}
   - {fileID: 1707891102}
   - {fileID: 1707891101}
+  source: {fileID: 3563496944586755411}
+  winSound: {fileID: 8300000, guid: 50cbaacc6b24dea4894058429e41653c, type: 3}
+--- !u!82 &3563496944586755411 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2888023125856272294, guid: b48543679a25de34689c59341867aa14, type: 3}
+  m_PrefabInstance: {fileID: 3563496944586755408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8293904947279422943
 PrefabInstance:
   m_ObjectHideFlags: 0

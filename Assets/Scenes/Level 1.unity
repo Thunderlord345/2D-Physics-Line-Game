@@ -233,6 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 2025811135}
+  audioSource: {fileID: 4037044471883741438}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &63008393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1217,6 +1219,8 @@ MonoBehaviour:
   - {fileID: 4037044471883741437}
   - {fileID: 4037044471883741436}
   - {fileID: 4037044471883741435}
+  source: {fileID: 1732054547}
+  winSound: {fileID: 8300000, guid: 50cbaacc6b24dea4894058429e41653c, type: 3}
 --- !u!4 &1658491779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2334671122114664588, guid: 2c0a5bc0169db6642996eef5543b1abb, type: 3}
@@ -1414,6 +1418,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1770307027, guid: b48543679a25de34689c59341867aa14, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b48543679a25de34689c59341867aa14, type: 3}
+--- !u!82 &1732054547 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2888023125856272294, guid: b48543679a25de34689c59341867aa14, type: 3}
+  m_PrefabInstance: {fileID: 1732054546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1796305271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4037044471228320141, guid: c61f5cb123a7faf4289a152884723297, type: 3}

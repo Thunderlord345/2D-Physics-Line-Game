@@ -11,6 +11,9 @@ public class FinishLine : MonoBehaviour
     public GameObject ball;
     public GameObject[] stars, blankStars;
     ScoreManager sc;
+
+    public AudioSource source;
+    public AudioClip winSound;
     private void Start()
     {
         sc = FindObjectOfType<ScoreManager>();
@@ -28,11 +31,14 @@ public class FinishLine : MonoBehaviour
     IEnumerator Win()
     {
         PlayerPrefs.SetInt("levelUnlocked", levelToUnlock);
+        source.PlayOneShot(winSound);
+        Destroy(ball);
+        yield return new WaitForSeconds(0.4f);
         winScreen.SetActive(true);
         StarDisplayScore();
-        Destroy(ball);
+        
 
-        yield return new WaitForSeconds(0.5f);
+        
         
     }
 

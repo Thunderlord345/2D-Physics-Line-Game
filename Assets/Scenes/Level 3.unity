@@ -1547,6 +1547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 456367454}
+  audioSource: {fileID: 456367461}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &928438543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1726,9 +1728,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1391277104}
     m_Modifications:
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 456367454}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 456367461}
     - target: {fileID: 3191557807255081981, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -2170,9 +2180,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 25488397}
     m_Modifications:
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 456367454}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 456367461}
     - target: {fileID: 3191557807255081981, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -3134,6 +3152,13 @@ MonoBehaviour:
   - {fileID: 456367460}
   - {fileID: 456367459}
   - {fileID: 456367458}
+  source: {fileID: 3875295187953186856}
+  winSound: {fileID: 8300000, guid: 50cbaacc6b24dea4894058429e41653c, type: 3}
+--- !u!82 &3875295187953186856 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2888023125856272294, guid: b48543679a25de34689c59341867aa14, type: 3}
+  m_PrefabInstance: {fileID: 3875295187953186853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8293904947279422943
 PrefabInstance:
   m_ObjectHideFlags: 0

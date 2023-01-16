@@ -537,7 +537,7 @@ Transform:
   m_LocalScale: {x: 1.597701, y: 2.5111227, z: 1.252082}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257874758
 GameObject:
@@ -1064,7 +1064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &737168033
 PrefabInstance:
@@ -1074,9 +1074,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1203679277}
     m_Modifications:
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 1164962971}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1663772991}
     - target: {fileID: 3191557807255081981, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
@@ -1354,9 +1362,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1203679277}
     m_Modifications:
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 1164962971}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1663772991}
     - target: {fileID: 3191557807255081981, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -1617,9 +1633,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1300544883}
     m_Modifications:
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 1164962971}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1663772991}
     - target: {fileID: 3191557807255081981, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
@@ -2599,7 +2623,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1917637141
 PrefabInstance:
@@ -2609,9 +2633,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 1300544883}
     m_Modifications:
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 1164962971}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1663772991}
     - target: {fileID: 3191557807255081981, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: m_Name
       value: Spikes
@@ -2827,6 +2859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 1164962971}
+  audioSource: {fileID: 1663772991}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &1969616904
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3042,9 +3076,16 @@ MonoBehaviour:
   - {fileID: 1663772990}
   - {fileID: 1663772989}
   - {fileID: 1663772988}
+  source: {fileID: 3875295187953186857}
+  winSound: {fileID: 8300000, guid: 50cbaacc6b24dea4894058429e41653c, type: 3}
 --- !u!4 &3875295187953186856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7315224053367351015, guid: b48543679a25de34689c59341867aa14, type: 3}
+  m_PrefabInstance: {fileID: 3875295187953186853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3875295187953186857 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2888023125856272294, guid: b48543679a25de34689c59341867aa14, type: 3}
   m_PrefabInstance: {fileID: 3875295187953186853}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8293904947279422943
