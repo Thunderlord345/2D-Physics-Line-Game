@@ -15,6 +15,8 @@ public class PauseScreen : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip buttSound;
 
+    public AudioSource levelAudio;
+
     private void Start()
     {
         background.SetActive(false);
@@ -27,7 +29,8 @@ public class PauseScreen : MonoBehaviour
         Time.timeScale = 0f;
         background.SetActive(true);
         isPaused = true;
-       
+
+        levelAudio.Pause();
     }
 
     public void Resume()
@@ -36,6 +39,8 @@ public class PauseScreen : MonoBehaviour
         Time.timeScale = 1f;
         background.SetActive(false);
         isPaused = false;
+
+        levelAudio.UnPause();
     }
 
     public void BackToMenu()
