@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 139998841599585030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.12040138, y: -0.272945, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f44fb69c2e2bd8844939de73d6620bb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 978efdc236f548a46a5c5f78ab5d2d91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: 10
   coin: {fileID: 139998841599585030}
+  scoreManager: {fileID: 0}
   rotationRate: {x: 0, y: 150, z: 0}
 --- !u!58 &5526996184539342172
 CircleCollider2D:
