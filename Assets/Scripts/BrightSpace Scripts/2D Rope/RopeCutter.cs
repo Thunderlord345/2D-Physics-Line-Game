@@ -1,7 +1,11 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class RopeCutter : MonoBehaviour {
 	
+	public AudioSource audioSource;
+	public AudioClip ropeCutSound;
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButton(0))
@@ -11,7 +15,7 @@ public class RopeCutter : MonoBehaviour {
 			{
 				if (hit.collider.tag == "Link")
 				{
-
+					audioSource.PlayOneShot(ropeCutSound);
 					//Destroy(hit.collider.gameObject); //Cuts "Rope" by removing one "Link"
 					Destroy(hit.transform.parent.gameObject); //Removes all rope + anchor , use alpha if want to fade out
 				}

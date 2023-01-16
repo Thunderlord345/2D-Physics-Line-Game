@@ -205,6 +205,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7071602179197278135, guid: b7662bb86cdc3f046b9a7a933863357e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1602598357}
+    - target: {fileID: 7071602179197278135, guid: b7662bb86cdc3f046b9a7a933863357e, type: 3}
+      propertyPath: ropeCutSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5216bd83c9abbdf4db96100b621d783d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7662bb86cdc3f046b9a7a933863357e, type: 3}
 --- !u!1001 &1062006281
@@ -1009,7 +1017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1602598357
 AudioSource:
   m_ObjectHideFlags: 0

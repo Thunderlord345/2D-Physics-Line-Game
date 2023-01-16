@@ -1052,6 +1052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7271a92b562281f4bae1b0fd8c6a5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 1044036765}
+  ropeCutSound: {fileID: 8300000, guid: 5216bd83c9abbdf4db96100b621d783d, type: 3}
 --- !u!4 &678535755
 Transform:
   m_ObjectHideFlags: 0

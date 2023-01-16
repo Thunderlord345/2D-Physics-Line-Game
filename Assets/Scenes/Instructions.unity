@@ -2077,7 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2a26c20397dbe4480d971764b4ab07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonSound: {fileID: 0}
+  buttonSound: {fileID: 8300000, guid: 67012e7ec4efe4840b4a6b85a9edfedc, type: 3}
   audioSource: {fileID: 92646867}
 --- !u!114 &2105056783
 MonoBehaviour:
