@@ -9,12 +9,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: c09926080f74ff1498ac9fc85a8ec5fc
-  - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: 73caebdc16bb8524cbd1883c7343cb20
   - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: c09926080f74ff1498ac9fc85a8ec5fc
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 93a17345d79a44043beadeb4e224ac32
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 78d6b872b7164eb4f831f11aeed97fb8
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: a5c7883a5908f6e48907cb80f79a8c4d
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 6cb65e48b1593c24abd5766d106705e3
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: c39db6575e32fa24b8fb672d5d00ee83
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: 751ccdc589eedac44883f8226d79ca0f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: fdae22951c2cb1345adbdb1bc213fdeb
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 7f78717c53a61be4bbd2f65b6cf295a9
   m_configObjects: {}
