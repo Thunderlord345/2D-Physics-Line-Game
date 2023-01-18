@@ -17,14 +17,17 @@ public class ModeSwitch : MonoBehaviour
 	Color bgLineAlpha;
 	Color lineAlpha;
 
+	public bool hasSwitched;
 
-	public Button lineDrawer;
+	
 
 	LineFactory lf;
 	private void Start()
     {
 		lf = FindObjectOfType<LineFactory>();
-		lineDrawer.interactable = true;
+		lf.isRunning = true;
+		
+		
 		 //RopeCutter color
 		bgAlpha = bg.color;
 		scissorsAlpha = scissors.color;
@@ -47,25 +50,26 @@ public class ModeSwitch : MonoBehaviour
 	}
     private void Update()
     {
-        if(lineDrawer.interactable == false)
-        {
+		if (hasSwitched)
 			lf.isRunning = false;
-        }
     }
-    public void RopeCutter()
+    public void SwitchModes()
     {
 		bgLineAlpha.a = 0.6f;
 		lineAlpha.a = 0.6f;
+		line.color = lineAlpha;
+		bgLine.color = bgLineAlpha;
 
 		bgAlpha.a = 1f;
 		scissorsAlpha.a = 1f;
+		bg.color = bgAlpha;
+		scissors.color = scissorsAlpha;
 
 		cutter.SetActive(true);
-		lineDrawer.interactable = false;
+
+		hasSwitched = true;
+		
 	}
 
-	public void LineDrawer()
-    {
-		lf.isRunning = true;
-    }
+	
 }
