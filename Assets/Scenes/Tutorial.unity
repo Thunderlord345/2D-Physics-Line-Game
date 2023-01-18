@@ -221,6 +221,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72396051}
   m_CullTransparentMesh: 1
+--- !u!1 &162177364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4829955211201626895, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
+  m_PrefabInstance: {fileID: 1360040127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &288215339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +1842,7 @@ MonoBehaviour:
   - {fileID: 1756625791}
   - {fileID: 288215339}
   - {fileID: 393448737}
-  levelAudio: {fileID: 1602598356}
+  lineFact: {fileID: 162177364}
   source: {fileID: 1504830413}
   feedback: {fileID: 8300000, guid: 16786ceb482d93b4785ce35f57d12767, type: 3}
 --- !u!1 &1598094692

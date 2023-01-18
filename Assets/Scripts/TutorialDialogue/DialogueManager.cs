@@ -5,18 +5,16 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject[] instructions;
-    LineFactory lf;
+    
     int instructIndex;
-
-    public GameObject levelAudio;
+    public GameObject lineFact;
+   
     public AudioSource source;
     public AudioClip feedback;
     private void Start()
     {
-        lf = FindObjectOfType<LineFactory>();
 
-        lf.isRunning = false;
-        levelAudio.SetActive(false);
+        lineFact.SetActive(false);
         
     }
 
@@ -46,10 +44,11 @@ public class DialogueManager : MonoBehaviour
             source.PlayOneShot(feedback);
         }
 
-        if(instructIndex == instructions.Length)
+        if(instructIndex >= instructions.Length)
         {
-            lf.isRunning = true;
-            levelAudio.SetActive(true);
+
+            lineFact.SetActive(true);
         }
+       
     }
 }
