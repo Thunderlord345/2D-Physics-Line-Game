@@ -286,6 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 783390400}
+  levelAudio: {fileID: 1701527168}
   audioSource: {fileID: 783390407}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!1001 &175780307
@@ -376,6 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 783390400}
+  levelAudio: {fileID: 1701527168}
   audioSource: {fileID: 783390407}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!4 &201501758 stripped
@@ -1184,6 +1186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 783390400}
+  levelAudio: {fileID: 1701527168}
   audioSource: {fileID: 783390407}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &790855466

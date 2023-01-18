@@ -630,6 +630,14 @@ PrefabInstance:
       propertyPath: lineFact
       value: 
       objectReference: {fileID: 162177364}
+    - target: {fileID: 1596896385, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: instructions.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1596896385, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: instructions.Array.data[6]
+      value: 
+      objectReference: {fileID: 1504830408}
     - target: {fileID: 2622227286581476460, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: cutter
       value: 
@@ -730,6 +738,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5543866534004265161, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c61f5cb123a7faf4289a152884723297, type: 3}
 --- !u!1 &1504830401 stripped
@@ -765,6 +777,11 @@ GameObject:
 --- !u!1 &1504830407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4037044471700403367, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+  m_PrefabInstance: {fileID: 1504830400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1504830408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5543866534004265161, guid: c61f5cb123a7faf4289a152884723297, type: 3}
   m_PrefabInstance: {fileID: 1504830400}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1504830409 stripped
@@ -1112,6 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 1504830412}
+  levelAudio: {fileID: 1602598356}
   audioSource: {fileID: 1504830413}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &1630908520

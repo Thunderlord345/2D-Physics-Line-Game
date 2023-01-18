@@ -6068,12 +6068,12 @@ MonoBehaviour:
   m_text: 'Drag your finger along the screen to draw lines.
 
 
-    You are only allowed
-    a certain number of lines per level.
+    Once you switch
+    from line to cut-rope mode, there is no going back
 
 
-    cut the rope holding the ball whenever
-    you''re ready.'
+    Whenever you''re ready,
+    toggle the mode'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

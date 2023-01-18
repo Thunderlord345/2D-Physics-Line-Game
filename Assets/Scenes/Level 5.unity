@@ -200,6 +200,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: levelAudio
+      value: 
+      objectReference: {fileID: 1526098268}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 402255893}
@@ -612,6 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 402255893}
+  levelAudio: {fileID: 1526098268}
   audioSource: {fileID: 438115093}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!1001 &351199125
@@ -1161,6 +1166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 402255893}
+  levelAudio: {fileID: 1526098268}
   audioSource: {fileID: 438115093}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!4 &438115092
@@ -1516,6 +1522,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: levelAudio
+      value: 
+      objectReference: {fileID: 1526098268}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
       objectReference: {fileID: 402255893}
@@ -1799,6 +1809,10 @@ PrefabInstance:
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: levelAudio
+      value: 
+      objectReference: {fileID: 1526098268}
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 
@@ -2895,6 +2909,10 @@ PrefabInstance:
       propertyPath: deathSound
       value: 
       objectReference: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: levelAudio
+      value: 
+      objectReference: {fileID: 1526098268}
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: loseScreen
       value: 

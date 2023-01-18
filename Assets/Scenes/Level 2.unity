@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 1707891097}
+  levelAudio: {fileID: 394937991}
   audioSource: {fileID: 1707891104}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!1 &134439598
@@ -296,8 +297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseScreen: {fileID: 1707891097}
-  audioSource: {fileID: 0}
-  deathSound: {fileID: 0}
+  levelAudio: {fileID: 394937991}
+  audioSource: {fileID: 1707891104}
+  deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
 --- !u!61 &134439602
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -750,6 +752,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4809234943555784504, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809234943555784504, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809234943555784504, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
+      propertyPath: m_Motor.m_MotorSpeed
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 4809234943555784507, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
       propertyPath: m_Name
       value: Spinning Gear 1
@@ -1082,6 +1096,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4809234943555784504, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -5.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809234943555784504, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809234943555784504, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
+      propertyPath: m_Motor.m_MotorSpeed
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 4809234943555784507, guid: 1cf5ffc954251ee49b9e9853dac4fb12, type: 3}
       propertyPath: m_Name
       value: Spinning Gear 1 (1)
