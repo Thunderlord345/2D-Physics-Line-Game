@@ -19,16 +19,12 @@ public class LineFactory : MonoBehaviour
 	public bool enableLineLife;
 	public bool isRunning;
 
-	[Header("Score")]
+	/*[Header("Score")]
 	public int lineLimit;
 	public int defaultLineLimit;
-	public TextMeshProUGUI lineCount;
+	public TextMeshProUGUI lineCount;*/
 
-	[Header("Color")]
-	public Image bg;
-	public Image scissors;
-	Color bgAlpha;
-	Color scissorsAlpha;
+	
 
 	public GameObject cutter;
 
@@ -44,7 +40,7 @@ public class LineFactory : MonoBehaviour
 
 		
 	}
-
+	
 	// Use this for initialization
 	void Start ()
 	{
@@ -62,14 +58,7 @@ public class LineFactory : MonoBehaviour
 		}
 
 
-		bgAlpha = bg.color;
-		scissorsAlpha = scissors.color;
-
-		bgAlpha.a = 0.6f;
-		scissorsAlpha.a = 0.6f;
-
-		bg.color = bgAlpha;
-		scissors.color = scissorsAlpha;	
+		
 
 	
 	}
@@ -77,8 +66,18 @@ public class LineFactory : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (!isRunning) {
+       
+
+		if (!isRunning)
 			return;
+
+		if (ps.isPaused == false)
+		{
+			isRunning = true;
+		}
+		else if (ps.isPaused == true)
+		{
+			isRunning = false;
 		}
 
 		if (Input.GetMouseButtonDown (0)) {
@@ -95,7 +94,7 @@ public class LineFactory : MonoBehaviour
 			}
 		}
 
-		if (lineLimit <= 0)
+		/*if (lineLimit <= 0)
         {
 			isRunning = false;
 			lineLimit = 0;
@@ -109,7 +108,7 @@ public class LineFactory : MonoBehaviour
 		}
 
 		
-		LimitCount();
+		LimitCount();*/
 
 		
 	}
@@ -119,7 +118,7 @@ public class LineFactory : MonoBehaviour
 	{
 		currentLine = (Instantiate (linePrefab, Vector3.zero, Quaternion.identity) as GameObject).GetComponent<Line> ();
 		linePrefabs.Add(linePrefab);
-		lineLimit--;
+		//lineLimit--;
 		currentLine.name = "Line";
 		currentLine.transform.SetParent (lineParent);
 		currentLine.SetRigidBodyType (lineRigidBodyType);
@@ -164,7 +163,7 @@ public class LineFactory : MonoBehaviour
 
 	;
 
-	public void LimitCount() //Counts lines left
+	/*public void LimitCount() //Counts lines left
 	{
 		
 		int fakeLineLimit = lineLimit - 1;
@@ -178,7 +177,7 @@ public class LineFactory : MonoBehaviour
 
 	}
 
-	public void ClearLines() //Clears lines
+	/*public void ClearLines() //Clears lines
     {
 		 linePrefab = GameObject.FindGameObjectWithTag("Line");
 		if (linePrefab == null)
@@ -192,5 +191,5 @@ public class LineFactory : MonoBehaviour
 
 		lineLimit = defaultLineLimit;
 		
-	}
+	}*/
 }
