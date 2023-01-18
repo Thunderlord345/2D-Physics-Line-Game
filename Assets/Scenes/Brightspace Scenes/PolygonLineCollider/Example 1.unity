@@ -579,12 +579,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 1200634299604260, guid: f7db69177733d2746a5e09f9dbe77df0, type: 3}
   currentLine: {fileID: 0}
+  linePrefabs: []
   lineParent: {fileID: 690090450}
   lineRigidBodyType: 1
   lineEnableMode: 0
   lineLife: {fileID: 1318973851}
   enableLineLife: 1
   isRunning: 1
+  lineLimit: 0
+  defaultLineLimit: 0
+  lineCount: {fileID: 0}
+  bg: {fileID: 812955834}
+  scissors: {fileID: 812955834}
+  cutter: {fileID: 8293904947979303804, guid: 9eb87cbb7b03a0b449ef2045674c4ef3, type: 3}
 --- !u!1 &719254498
 GameObject:
   m_ObjectHideFlags: 0

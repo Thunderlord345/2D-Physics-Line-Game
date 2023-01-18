@@ -1378,6 +1378,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1596896383, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4037044470791117959, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: levelAudio
       value: 

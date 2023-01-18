@@ -11,9 +11,11 @@ public class DialogueManager : MonoBehaviour
    
     public AudioSource source;
     public AudioClip feedback;
+
+    PauseScreen ps;
     private void Start()
     {
-
+        ps = FindObjectOfType<PauseScreen>();
         lineFact.SetActive(false);
         
     }

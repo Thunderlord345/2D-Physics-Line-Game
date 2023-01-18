@@ -31,7 +31,8 @@ public class LineFactory : MonoBehaviour
 	Color scissorsAlpha;
 
 	public GameObject cutter;
-	
+
+	PauseScreen ps;
 
 	void Awake ()
 	{
@@ -47,6 +48,7 @@ public class LineFactory : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		ps = FindObjectOfType<PauseScreen>();
 		if (lineParent == null) {
 			lineParent = GameObject.Find ("Lines").transform;
 		}
@@ -106,6 +108,7 @@ public class LineFactory : MonoBehaviour
 			scissors.color = scissorsAlpha;
 		}
 
+		
 		LimitCount();
 
 		
