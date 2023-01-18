@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 518, y: 587}
+  m_AnchoredPosition: {x: 518, y: 495}
   m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288215341
@@ -1266,11 +1266,11 @@ PrefabInstance:
       objectReference: {fileID: 13171692}
     - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: lineLimit
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4829955211201626894, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: defaultLineLimit
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4829955211201626895, guid: 23f91513d5687e146a4b9eb1abd4ee60, type: 3}
       propertyPath: m_Name
@@ -1838,6 +1838,8 @@ MonoBehaviour:
   - {fileID: 288215339}
   - {fileID: 393448737}
   levelAudio: {fileID: 1602598356}
+  source: {fileID: 1504830413}
+  feedback: {fileID: 8300000, guid: 16786ceb482d93b4785ce35f57d12767, type: 3}
 --- !u!1 &1598094692
 GameObject:
   m_ObjectHideFlags: 0

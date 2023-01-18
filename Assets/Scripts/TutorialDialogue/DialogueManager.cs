@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     int instructIndex;
 
     public GameObject levelAudio;
+    public AudioSource source;
+    public AudioClip feedback;
     private void Start()
     {
         lf = FindObjectOfType<LineFactory>();
@@ -30,6 +32,7 @@ public class DialogueManager : MonoBehaviour
             if(i == instructIndex)
             {
                 instructions[i].SetActive(true);
+                
             }
             else
             {
@@ -37,9 +40,10 @@ public class DialogueManager : MonoBehaviour
             }
         }
         // Move along the array with every tap
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && instructIndex < instructions.Length)
         {
             instructIndex++;
+            source.PlayOneShot(feedback);
         }
 
         if(instructIndex == instructions.Length)
