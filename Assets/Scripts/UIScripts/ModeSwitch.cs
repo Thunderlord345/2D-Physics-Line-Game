@@ -17,6 +17,8 @@ public class ModeSwitch : MonoBehaviour
 	Color bgLineAlpha;
 	Color lineAlpha;
 
+	public Button switchButt;
+
 	public bool hasSwitched;
 
 	
@@ -26,8 +28,8 @@ public class ModeSwitch : MonoBehaviour
     {
 		lf = FindObjectOfType<LineFactory>();
 		lf.isRunning = true;
-		
-		
+
+		switchButt.interactable = true;
 		 //RopeCutter color
 		bgAlpha = bg.color;
 		scissorsAlpha = scissors.color;
@@ -67,6 +69,7 @@ public class ModeSwitch : MonoBehaviour
 
 		cutter.SetActive(true);
 
+		switchButt.interactable = false;
 		hasSwitched = true;
 		
 	}
