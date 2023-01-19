@@ -289,6 +289,7 @@ MonoBehaviour:
   levelAudio: {fileID: 1701527168}
   audioSource: {fileID: 783390407}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+  ball: {fileID: 1485664097}
 --- !u!1001 &175780307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -380,6 +381,7 @@ MonoBehaviour:
   levelAudio: {fileID: 1701527168}
   audioSource: {fileID: 783390407}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+  ball: {fileID: 1485664097}
 --- !u!4 &201501758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2795971078114271548, guid: 34ad0207119045343a05394a93f4bfd7, type: 3}
@@ -1191,6 +1193,7 @@ MonoBehaviour:
   levelAudio: {fileID: 1701527168}
   audioSource: {fileID: 783390407}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+  ball: {fileID: 1485664097}
 --- !u!61 &790855466
 BoxCollider2D:
   m_ObjectHideFlags: 0

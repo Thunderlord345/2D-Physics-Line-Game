@@ -1275,7 +1275,7 @@ GameObject:
   - component: {fileID: 744318358}
   - component: {fileID: 744318357}
   m_Layer: 3
-  m_Name: Background (1)
+  m_Name: 'Background '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1545,6 +1545,7 @@ MonoBehaviour:
   levelAudio: {fileID: 1661803697}
   audioSource: {fileID: 456367461}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+  ball: {fileID: 1485664097}
 --- !u!61 &928438543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1723,6 +1724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391277104}
     m_Modifications:
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1485664097}
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: deathSound
       value: 
@@ -2179,6 +2184,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 25488397}
     m_Modifications:
+    - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 1485664097}
     - target: {fileID: -129823824313039114, guid: 46c684693ff00184e920c67b37ea279b, type: 3}
       propertyPath: deathSound
       value: 

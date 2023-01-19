@@ -225,6 +225,7 @@ MonoBehaviour:
   levelAudio: {fileID: 394937991}
   audioSource: {fileID: 1707891104}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+  ball: {fileID: 1485664097}
 --- !u!1 &134439598
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +301,7 @@ MonoBehaviour:
   levelAudio: {fileID: 394937991}
   audioSource: {fileID: 1707891104}
   deathSound: {fileID: 8300000, guid: 860c79d0bea9cc94abb64721aa00cdd4, type: 3}
+  ball: {fileID: 1485664097}
 --- !u!61 &134439602
 BoxCollider2D:
   m_ObjectHideFlags: 0

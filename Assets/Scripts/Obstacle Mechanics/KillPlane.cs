@@ -10,6 +10,8 @@ public class KillPlane : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip deathSound;
 
+    public GameObject ball;
+
     private void Start()
     {
         loseScreen.SetActive(false);
@@ -18,6 +20,7 @@ public class KillPlane : MonoBehaviour
     {
         if(other.tag == "Ball")
         {
+            Destroy(ball);
             levelAudio.SetActive(false);
             audioSource.PlayOneShot(deathSound);
             loseScreen.SetActive(true);
