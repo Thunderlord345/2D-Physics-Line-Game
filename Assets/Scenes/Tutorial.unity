@@ -155,6 +155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RopeCutter
       objectReference: {fileID: 0}
+    - target: {fileID: 7071602179197278132, guid: b7662bb86cdc3f046b9a7a933863357e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7071602179197278134, guid: b7662bb86cdc3f046b9a7a933863357e, type: 3}
       propertyPath: m_RootOrder
       value: 8

@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
+        
         TutorialPopUp();
     }
 
@@ -40,7 +41,7 @@ public class DialogueManager : MonoBehaviour
             }
         }
         // Move along the array with every tap
-        if (Input.GetMouseButtonDown(0) && instructIndex < instructions.Length)
+        if (Input.GetMouseButtonDown(0) && instructIndex < instructions.Length && !ps.isPaused)
         {
             instructIndex++;
             source.PlayOneShot(feedback);
@@ -53,4 +54,6 @@ public class DialogueManager : MonoBehaviour
         }
        
     }
+
+   
 }

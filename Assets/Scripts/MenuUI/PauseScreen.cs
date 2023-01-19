@@ -31,6 +31,7 @@ public class PauseScreen : MonoBehaviour
         isPaused = true;
 
         levelAudio.Pause();
+
     }
 
     public void Resume()
