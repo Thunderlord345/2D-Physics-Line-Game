@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
             source.PlayOneShot(feedback);
         }
 
-        if(instructIndex >= instructions.Length)
+        if(instructIndex == instructions.Length)
         {
 
             lineFact.SetActive(true);

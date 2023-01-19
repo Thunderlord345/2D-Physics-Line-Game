@@ -646,6 +646,10 @@ PrefabInstance:
       propertyPath: cutter
       value: 
       objectReference: {fileID: 823451967}
+    - target: {fileID: 4037044470614821040, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_Name
+      value: Scissors
+      objectReference: {fileID: 0}
     - target: {fileID: 4037044470791117959, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: levelAudio
       value: 
@@ -741,6 +745,10 @@ PrefabInstance:
     - target: {fileID: 4037044471988772198, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950133482522560660, guid: c61f5cb123a7faf4289a152884723297, type: 3}
+      propertyPath: m_Name
+      value: Line Icon
       objectReference: {fileID: 0}
     - target: {fileID: 5543866534004265161, guid: c61f5cb123a7faf4289a152884723297, type: 3}
       propertyPath: m_IsActive
