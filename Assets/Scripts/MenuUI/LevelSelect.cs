@@ -13,10 +13,12 @@ public class LevelSelect : MonoBehaviour
     public Button[] levelButtons;
     public AudioClip audio;
     public AudioSource audioSource;
+
+    public int levelUnlocked;
     // Start is called before the first frame update
     void Start()
     {
-        int levelUnlocked = PlayerPrefs.GetInt("levelUnlocked", 1); //Default level unlocked to be 0
+        levelUnlocked = PlayerPrefs.GetInt("levelUnlocked", 1); //Default level unlocked to be 0
 
         for (int i = 0; i < levelButtons.Length; i++)
         {
@@ -24,6 +26,11 @@ public class LevelSelect : MonoBehaviour
             if(i + 1 > levelUnlocked)
                 levelButtons[i].interactable = false;
         }
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void Select(string levelName)

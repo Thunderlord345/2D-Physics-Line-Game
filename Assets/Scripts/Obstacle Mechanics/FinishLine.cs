@@ -30,7 +30,9 @@ public class FinishLine : MonoBehaviour
 
     IEnumerator Win()
     {
-        PlayerPrefs.SetInt("levelUnlocked", levelToUnlock);
+        if (levelToUnlock > PlayerPrefs.GetInt("levelUnlocked"))
+            PlayerPrefs.SetInt("levelUnlocked", levelToUnlock);
+
         source.PlayOneShot(winSound);
         Destroy(ball);
         yield return new WaitForSeconds(0.4f);
